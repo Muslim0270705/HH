@@ -1,0 +1,19 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.5s;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+}
+.container{
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+  width: 100%;
+}
+@import "header";
+
+@import "footer";
