@@ -1,0 +1,11 @@
+.main{
+  &__row{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+  }
+  &__card{
+    width: 100%;
+  }
+}
