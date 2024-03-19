@@ -1,0 +1,54 @@
+.header{
+  padding: 10px 80px;
+  background: rgba(3,4,4,0.81);
+  display: flex;
+  column-gap: 780px;
+  &__right{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+  }
+  &__img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  &__info{
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    &:hover{
+      color: aqua;
+    }
+  }
+  &__left{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+  }
+ &__btn{
+   border-radius: 20px;
+   padding: 10px;
+   color: #559d22;
+   background: transparent;
+   border: rgba(0,0,0,0.69) 2px solid;
+   cursor: pointer;
+   font-weight: 500;
+   font-size: 15px;
+   &:hover{
+     border: 2px solid #39721a;
+   }
+ }
+  &__login{
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    border-radius: 20px;
+    border: rgba(0,0,0,0.43) 1px solid;
+    padding: 10px;
+    &:hover{
+      border: 1px solid white;
+    }
+  }
+}
