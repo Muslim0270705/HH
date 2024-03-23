@@ -3,6 +3,11 @@
   background: rgba(3,4,4,0.81);
   display: flex;
   column-gap: 780px;
+  &__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   &__right{
     display: flex;
     column-gap: 20px;
