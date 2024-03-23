@@ -1,0 +1,83 @@
+.help {
+  padding: 50px 0;
+
+  &__title {
+    margin-bottom: 20px;
+    padding: 0;
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  &__text {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+
+  &__desc {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  &__inputs {
+
+  }
+  &__input {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 15px 0;
+
+  }
+  &__label {
+    display: block;
+    align-items: center;
+  }
+
+  &__information {
+    margin-bottom: 15px;
+    width: 550px;
+    height: 40px;
+    border: 1px solid darkgrey;
+    border-radius: 3px;
+    outline: none;
+    padding-left: 20px;
+  }
+
+  &__information:hover {
+    margin-bottom: 15px;
+    width: 550px;
+    height: 40px;
+    border: 1.5px solid dodgerblue;
+    border-radius: 3px;
+    outline: none;
+    padding-left: 20px;
+  }
+
+  &__content {
+    margin-bottom: 15px;
+    border: 1px solid darkgrey;
+    border-radius: 3px;
+    outline: none;
+    padding: 20px 0 0 20px;
+  }
+
+  &__content:hover {
+    margin-bottom: 15px;
+    border: 1.5px solid dodgerblue;
+    border-radius: 3px;
+    outline: none;
+    padding: 20px 0 0 20px;
+  }
+
+  &__btn {
+    width: 110px;
+    height: 40px;
+    background: #0070ff;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+  }
+}

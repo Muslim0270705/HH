@@ -1,5 +1,9 @@
 import React from 'react';
+<<<<<<< HEAD
 import {Link} from "react-router-dom";
+=======
+import {Link} from "react-router-dom"
+>>>>>>> 64ccbef7e1a8c8eb5584e465e43474d3d8bf62d5
 const Header = () => {
     return (
             <header className="header">
@@ -10,7 +14,13 @@ const Header = () => {
                                  alt=""
                                  className="header__img"/>
                             <p className="header__info">Работодателям</p>
+<<<<<<< HEAD
                             <p className="header__info">Помощь</p>
+=======
+                            <Link to={"/help"}>
+                                <p className="header__info">Помощь</p>
+                            </Link>
+>>>>>>> 64ccbef7e1a8c8eb5584e465e43474d3d8bf62d5
                         </div>
                         <div className="header__left">
                             <a className="header__info">
@@ -19,11 +29,17 @@ const Header = () => {
                             <button className="header__btn">
                                 Создать резюме
                             </button>
+<<<<<<< HEAD
                             <Link to={"/register"}>
                                 <p className="header__login">
                                     Войти
                                 </p>
                             </Link>
+=======
+                            <p className="header__login">
+                                Войти
+                            </p>
+>>>>>>> 64ccbef7e1a8c8eb5584e465e43474d3d8bf62d5
                         </div>
                     </div>
                 </div>
