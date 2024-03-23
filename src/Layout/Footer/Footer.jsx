@@ -54,7 +54,6 @@ const Footer  = () => {
                         <div className=" footer__qrs ">
                             <div className="footer__qr">
                                  <span className="footer__code">
-
                             </span>
                             </div>
                         </div>
@@ -63,7 +62,6 @@ const Footer  = () => {
                     <div className="footer__right">
 
                     </div>
-
                 <div className="footer__inputs">
                     <ul className="footer__left-menu">
                         <li className="footer__input">
@@ -100,7 +98,6 @@ const Footer  = () => {
                     <p className="footer__desc">© 2024 Группа компаний HeadHunter</p>
                     <p className="footer__desc">Switch to English
                         <span className={"footer__span"}>
-
                         </span>
                     </p>
                 </div>

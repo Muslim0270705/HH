@@ -8,8 +8,13 @@
       },
       "work": true,
       "title": "Junior Front-end разработка",
+<<<<<<< HEAD
+      "company": "",
+      "location": "",
+=======
       "company": "It-Run",
       "location": "Bishkek",
+>>>>>>> 64ccbef7e1a8c8eb5584e465e43474d3d8bf62d5
       "experience": {
         "ask": 1,
         "desc": 3
@@ -52,6 +57,15 @@
     {
       "id": "2",
       "category": {
+<<<<<<< HEAD
+        "id": 1,
+        "title": "Back-End"
+      },
+      "work": false,
+      "title": "Junior Front-end разработка",
+      "company": "",
+      "location": "",
+=======
         "id": 2,
         "title": "Back-End"
       },
@@ -59,6 +73,7 @@
       "title": "Junior Back-End разработка",
       "company": "Red-Petrolium",
       "location": "Bishkek",
+>>>>>>> 64ccbef7e1a8c8eb5584e465e43474d3d8bf62d5
       "experience": {
         "ask": 0,
         "desc": 6
@@ -97,6 +112,11 @@
           ]
         }
       ]
+<<<<<<< HEAD
+    }
+  ]
+}
+=======
     },
     {
       "id": "3",
@@ -698,4 +718,9 @@
       }
     }
   ]
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 64ccbef7e1a8c8eb5584e465e43474d3d8bf62d5
+>>>>>>> 678662121026c648f53d813e6288147306a6a3f6
