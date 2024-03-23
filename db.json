@@ -113,8 +113,8 @@
         "desc": 0
       },
       "money": {
-        "ask": 3000,
-        "desc": 0
+        "ask": 1000,
+        "desc": 2500
       },
       "schedule": "Полная занятость",
       "conditions": [
@@ -159,7 +159,7 @@
       },
       "money": {
         "ask": 3000,
-        "desc": 0
+        "desc": 5000
       },
       "schedule": "Полная занятость",
       "conditions": [
@@ -203,8 +203,8 @@
         "desc": 6
       },
       "money": {
-        "ask": 3000,
-        "desc": 0
+        "ask": 500,
+        "desc": 1500
       },
       "schedule": "Полная занятость",
       "conditions": [
@@ -249,7 +249,7 @@
       },
       "money": {
         "ask": 1000,
-        "desc": 0
+        "desc": 1800
       },
       "schedule": "Полная занятость",
       "conditions": [
@@ -293,8 +293,8 @@
         "desc": 6
       },
       "money": {
-        "ask": 3000,
-        "desc": 0
+        "ask": 700,
+        "desc": 1900
       },
       "schedule": "Полная занятость",
       "conditions": [
@@ -338,8 +338,8 @@
         "desc": 6
       },
       "money": {
-        "ask": 3000,
-        "desc": 0
+        "ask": 2000,
+        "desc": 4000
       },
       "schedule": "Полная занятость",
       "conditions": [
@@ -482,7 +482,7 @@
       },
       "money": {
         "ask": 1000,
-        "desc": 2500
+        "desc": 2900
       },
       "schedule": "Полная занятость",
       "conditions": [
@@ -579,8 +579,8 @@
         "desc": 6
       },
       "money": {
-        "ask": 0,
-        "desc": 6000
+        "ask": 700,
+        "desc": 2000
       },
       "schedule": "Полная занятость",
       "conditions": [
@@ -628,8 +628,8 @@
         "desc": 6
       },
       "money": {
-        "ask": 0,
-        "desc": 6000
+        "ask": 1200,
+        "desc": 3000
       },
       "schedule": "Полная занятость",
       "conditions": [
