@@ -6,13 +6,6 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-    "json": "^11.0.0",
->>>>>>> 64ccbef7e1a8c8eb5584e465e43474d3d8bf62d5
->>>>>>> 678662121026c648f53d813e6288147306a6a3f6
     "axios": "^1.6.8",
     "concurrently": "^8.2.2",
     "json": "^11.0.0",
