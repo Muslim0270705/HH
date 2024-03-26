@@ -11,11 +11,12 @@ const Header = () => {
                                      alt=""
                                      className="header__img"/>
                             </Link>
-
                             <p className="header__info">Работодателям</p>
-
                             <Link to={"/"}>
                                 <p className="header__info">Мое резюме</p>
+                            </Link>
+                            <Link to={"/response"}>
+                                <p className="header__info">Oтклики</p>
                             </Link>
                             <Link to={"/help"}>
                                 <p className="header__info">Помощь</p>
