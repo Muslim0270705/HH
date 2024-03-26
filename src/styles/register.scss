@@ -1,0 +1,104 @@
+.register{
+  &__form{
+  }
+&__row{
+  width: 488px;
+  height: 325px;
+  border-radius: 4px;
+  box-shadow: 0 6px 16px rgba(0,0,0,.2);
+  padding: 20px;
+  margin-bottom: 30px;
+  background: #FFFFFF;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top:28%;
+  left: 50%;
+  }
+  &__title{
+    font-size: 24px;
+    line-height: 1.16;
+    font-family: var(--bloko-font-family-header-override, ProximaNovaCond, "Arial Narrow", "Roboto Condensed", Arial, sans-serif);
+    font-weight: 700;
+  }
+  &__input{
+    font-size: 14px;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    padding: 0 12px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-family: var(--bloko-font-family-override, Arial, "Helvetica Neue", sans-serif);
+    color: #2a3137;
+    background-color: #fff;
+    line-height: 38px;
+    border: 1px solid #aabbca;
+  }
+  &__button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__btn{
+    align-items: center;
+    height: 40px;
+    width: 112px;
+    color: #FFFFFF;
+    background: #0070ff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+  }
+  &__btn-link{
+    display: inline;
+    border: 0;
+    padding: 5px 0;
+    text-decoration: none;
+    font-size: inherit;
+    background: transparent;
+    box-shadow: none;
+    color: #468ffd;
+    justify-content: space-between;
+  }
+  &__icons{
+    span{
+      display: inline-block;
+      box-sizing: border-box;
+      margin: 15px 8px;
+      border-radius: 50%;
+      background-color: #fff;
+      position: relative;
+      border: 1px solid #ccd5df;
+      min-width: 40px;
+      height: 40px;
+      padding: 6px;
+    }
+  }
+  &__bottom{
+    width: 480px;
+    height: 161px;
+    border-radius: 4px;
+    box-shadow: 0 6px 16px rgba(0,0,0,.2);
+    padding: 20px;
+    margin-bottom: 10px;
+    background: #FFFFFF;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:65%;
+    left: 50%;
+  }
+  &__text{
+    padding: 10px 0;
+  }
+  &__submit{
+    align-items: center;
+    height: 40px;
+    width: 440px;
+    color: #FFFFFF;
+    background: #0070ff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+  }
+}
