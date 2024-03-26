@@ -7,6 +7,7 @@ import {Routes,Route} from "react-router-dom";
 import Layout from "./Layout/Layout";
 import Register from "./pages/Auth/Register/Register";
 import Help from "./pages/Help/Help";
+import Login from "./pages/Auth/Login/Login";
 function App() {
   return (
     <Routes>
@@ -15,6 +16,7 @@ function App() {
             <Route path={"/help"} element={<Help/>}/>
         </Route>
         <Route path={"/register"} element={<Register/>}/>
+        <Route path={"/login"} element={<Login/>}/>
     </Routes>
   );
 }
