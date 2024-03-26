@@ -14,7 +14,7 @@ const Header = () => {
 
                             <p className="header__info">Работодателям</p>
 
-                            <Link to={"/"}>
+                            <Link to={"/summary"}>
                                 <p className="header__info">Мое резюме</p>
                             </Link>
                             <Link to={"/help"}>
