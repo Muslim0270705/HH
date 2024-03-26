@@ -7,21 +7,25 @@ import { SiMaildotru } from "react-icons/si";
 const Register = () => {
     return (
             <div className="register">
-                <div className="container">
+                <form className="register__form">
                     <div className="register__row">
                         <h2 className="register__title">
                             Поиск работы
                         </h2>
                         <div className="register__row-card">
+                            <input placeholder={"Имя"} className={"register__input"} type="email"/>
                             <input placeholder={"Email"} className={"register__input"} type="email"/>
+                            <input placeholder={"Пароль"} className={"register__input"} type="password"/>
                             <div className="register__button">
-                                <button className="register__btn" type={"submit"}>
-                                    Продолжить
-                                </button>
-                                <button className="register__btn-link" type={"submit"} style={{cursor:"pointer"}}>
-                                    Войти с паролем
-                                </button>
+                                <Link to="/login">
+                                    <button className="register__btn-link" type={"submit"} style={{cursor:"pointer"}}>
+                                        Уже есть акаунт!
+                                    </button>
+                                </Link>
                             </div>
+                                <button className="register__submit" type={"submit"} style={{cursor:"pointer"}}>
+                                    Регистрация
+                                </button>
                             <div className="register__icons">
                             <span>
                               <FcGoogle style={{cursor:"pointer"}} size={25}/>
@@ -43,12 +47,7 @@ const Register = () => {
                             Я ищу сотрудников
                         </button>
                     </div>
-                    <div className="register__footer">
-                        <p className="register__desc">
-                            Нажимая « Продолжить » или на&nbsp;кнопки сервисов,<br/> вы&nbsp;подтверждаете, что ознакомились и&nbsp;полностью принимаете <br/> условия&nbsp;<a href="">соглашения</a>
-                        </p>
-                    </div>
-                </div>
+                </form>
             </div>
 
     );
