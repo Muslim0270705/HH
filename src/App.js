@@ -8,6 +8,7 @@ import Layout from "./Layout/Layout";
 import Register from "./pages/Auth/Register/Register";
 import Help from "./pages/Help/Help";
 import Summary from "./pages/Summary/Summary";
+import Response from "./pages/Responses/Response";
 function App() {
   return (
     <Routes>
@@ -15,6 +16,7 @@ function App() {
             <Route path={"/"} element={<Home/>}/>
             <Route path={"/help"} element={<Help/>}/>
             <Route path={"/summary"} element={<Summary/>}/>
+            <Route path={"/response"} element={<Response/>}/>
         </Route>
         <Route path={"/register"} element={<Register/>}/>
     </Routes>
