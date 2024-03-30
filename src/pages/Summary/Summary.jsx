@@ -1,5 +1,4 @@
 import React from 'react';
-import {hydrateRoot} from "react-dom/client";
 
 const Summary = () => {
     return (

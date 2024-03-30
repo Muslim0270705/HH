@@ -1,21 +1,46 @@
-import React from 'react';
-import {Link} from "react-router-dom";
+import React, {useState} from 'react';
+import {Link, useNavigate} from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { SiMaildotru } from "react-icons/si";
 
+import { v4 as uuidv4 } from 'uuid';
+import {useDispatch} from "react-redux";
+import {register} from "../../../redux/auth/auth";
 
 const Register = () => {
-    return (
+    const [userL,setUserL] = useState({
+        id:uuidv4(),
+        name:"",
+        lastName:"",
+        tell:"",
+        email:"",
+        role:"user",
+        cv: [
+
+        ],
+        genre:"",
+        password:"",
+    })
+    const dispatch = useDispatch()
+    const navigate = useNavigate()
+    const onChange = (e) => {
+        setUserL({...userL,[e.target.name]:e.target.value})
+    }
+    const onSubmit = (e) => {
+        e.preventDefault()
+        dispatch(register(userL)).then(navigate('/'))
+    }
+     return (
             <div className="register">
-                <form className="register__form">
+                <form onSubmit={(e) => onSubmit(e)} className="register__form">
                     <div className="register__row">
                         <h2 className="register__title">
                             Поиск работы
                         </h2>
                         <div className="register__row-card">
-                            <input placeholder={"Имя"} className={"register__input"} type="email"/>
-                            <input placeholder={"Email"} className={"register__input"} type="email"/>
-                            <input placeholder={"Пароль"} className={"register__input"} type="password"/>
+                            <input name={"name"} onChange={(e) => onChange(e)} placeholder={"Имя"} className={"register__input"} type="text"/>
+                            <input name={"email"} onChange={(e) => onChange(e)} placeholder={"Email"} className={"register__input"} type="email"/>
+                            <input name={"password"} onChange={(e) => onChange(e)} placeholder={"Пароль"} className={"register__input"} type="password"/>
                             <div className="register__button">
                                 <Link to="/login">
                                     <button className="register__btn-link" type={"submit"} style={{cursor:"pointer"}}>

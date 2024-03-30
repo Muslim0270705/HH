@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import axios from "axios";
 import { v4 as uuidv4 } from 'uuid';
 import {useNavigate} from "react-router-dom";
+import {useDispatch} from "react-redux";
+import {postReviews} from "../../redux/help/reviews";
 const Help = () => {
     const [review,setReview] = useState({
         id:uuidv4(),
@@ -15,15 +17,11 @@ const Help = () => {
         }
     })
     const navigate = useNavigate()
+    const dispatch = useDispatch()
     const postReview = (e) => {
         e.preventDefault()
         if(review.title && review.desc && review.name && review.email && review.category.name){
-            axios.post("http://localhost:4444/reviews",review)
-                .then((res) => {
-                    console.log(res)
-                    navigate("/")
-                })
-                .catch((err) => console.log(err))
+            dispatch(postReviews(review)).then(navigate("/"))
         }
         else{
             alert("Заполните все поля")

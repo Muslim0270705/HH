@@ -1,24 +1,21 @@
 import React, {useEffect, useState} from 'react';
 import { IoBagRemoveOutline } from "react-icons/io5";
-import axios from "axios";
+import {useDispatch, useSelector} from "react-redux";
+import {getVacancies} from "../../redux/vacancies/vacancies";
 
 
 const Home = () => {
-    const [vacancies,setVacancies] = useState([])
-    const getVacancies = () => {
-        axios("http://localhost:4444/vacancies")
-            .then(({data}) => setVacancies(data))
-            .catch((err) => console.log(err))
-    }
-    useEffect(() => {
-        getVacancies()
-    },[])
+    const {data} = useSelector(store => store.vacancies)
+    const dispatch = useDispatch()
+       useEffect(() => {
+           dispatch(getVacancies())
+       },[])
     return (
             <section className="home">
                 <div className="container">
                     <div className="home__row">
                         {
-                            vacancies.map((item) => (
+                            data.map((item) => (
                                 <div className="home__card">
                                     <p className="home__title">
                                         {item.title}
