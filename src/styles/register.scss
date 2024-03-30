@@ -1,15 +1,17 @@
 .register{
+  &__form{
+  }
 &__row{
   width: 488px;
-  height: 233px;
+  height: 325px;
   border-radius: 4px;
   box-shadow: 0 6px 16px rgba(0,0,0,.2);
   padding: 20px;
   margin-bottom: 30px;
   background: #FFFFFF;
   position: absolute;
-  transform: translate(-50%,-135%);
-  top:50%;
+  transform: translate(-50%,-50%);
+  top:28%;
   left: 50%;
   }
   &__title{
@@ -51,17 +53,19 @@
   &__btn-link{
     display: inline;
     border: 0;
+    padding: 5px 0;
     text-decoration: none;
     font-size: inherit;
     background: transparent;
     box-shadow: none;
     color: #468ffd;
+    justify-content: space-between;
   }
   &__icons{
     span{
       display: inline-block;
       box-sizing: border-box;
-      margin: 20px 8px;
+      margin: 15px 8px;
       border-radius: 50%;
       background-color: #fff;
       position: relative;
@@ -80,8 +84,8 @@
     margin-bottom: 10px;
     background: #FFFFFF;
     position: absolute;
-    transform: translate(-50%,-30%);
-    top:50%;
+    transform: translate(-50%,-50%);
+    top:65%;
     left: 50%;
   }
   &__text{
@@ -96,10 +100,5 @@
     border-radius: 4px;
     cursor: pointer;
     border: none;
-  }
-  &__desc{
-    color: #768694;
-    position: absolute;
-    transform: translate(73%,930%);
   }
 }

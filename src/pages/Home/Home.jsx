@@ -1,35 +1,42 @@
 import React, {useEffect, useState} from 'react';
 import { IoBagRemoveOutline } from "react-icons/io5";
-import axios from "axios";
+import {useDispatch, useSelector} from "react-redux";
+import {getVacancies} from "../../redux/vacancies/vacancies";
 
 
 const Home = () => {
-    const [vacancies,setVacancies] = useState([])
-    const getVacancies = () => {
-        axios("http://localhost:4444/vacancies")
-            .then(({data}) => setVacancies(data))
-            .catch((err) => console.log(err))
-    }
-    useEffect(() => {
-        getVacancies()
-    },[])
+    const {data} = useSelector(store => store.vacancies)
+    const dispatch = useDispatch()
+       useEffect(() => {
+           dispatch(getVacancies())
+       },[])
     return (
-            <section className="main">
+            <section className="home">
                 <div className="container">
-                    <div className="main__row">
+                    <div className="home__row">
                         {
-                            vacancies.map((item) => (
-                                <div className="main__card">
-                                    <p className="main__title">
+                            data.map((item) => (
+                                <div className="home__card">
+                                    <p className="home__title">
                                         {item.title}
                                     </p>
-                                    <p className="main__price">
+                                    <p className="home__price">
                                         {
                                             item.money.ask > 0 && item.money.desc > item.money.ask ?
                                                 `от $${item.money.ask} до $${item.money.desc}` : item.money.ask === 0 && item.money.desc === 0 ? "Без оплаты" : `до $${item.money.desc}`
                                         }
                                     </p>
-                                    <p className="main__exp">
+                                    <div className="home__group">
+                                        <p className="home__company">
+                                            MOTION WEB IT-АКАДЕМИЯ
+                                        </p>
+
+                                        <p className="home__city">
+                                            Бишкек
+                                        </p>
+                                    </div>
+
+                                    <p className="home__exp">
                                         <IoBagRemoveOutline/>
                                         {
                                             item.experience.ask > 0 && item.experience.desc > item.experience.ask ?
@@ -37,13 +44,15 @@ const Home = () => {
                                         }
                                     </p>
                                     {
-                                        item.work ? <p className="main__home">
+                                        item.work ? <p className="home__house">
                                             Можно из дома
                                         </p> : ""
                                     }
-                                    <button className="main__btn">
-                                        Откликнуться
-                                    </button>
+                                    <div className="home__btns">
+                                        <button className="home__btn">
+                                            Откликнуться
+                                        </button>
+                                    </div>
                                 </div>
                             ))
                         }

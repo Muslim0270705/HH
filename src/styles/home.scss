@@ -1,11 +1,66 @@
-.main{
+.home{
+  padding-top: 50px;
   &__row{
     display: flex;
     flex-direction: column;
     row-gap: 30px;
-
+  }
+  &__title{
+    font-style: 18px;
+    font-weight: 700;
+  }
+  &__price{
+    font-size: 24px;
+    font-weight: 700;
+  }
+  &__company{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+  &__group{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+  }
+  &__city{
+    font-size: 13px;
+    font-weight: 100;
   }
   &__card{
     width: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px;
+  }
+  &__exp{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    padding-bottom: 10px;
+  }
+  &__house{
+    background: #768694;
+    width: 120px;
+    height: 20px;
+    border-radius: 4px;
+    opacity: 60%;
+    display: flex;
+    align-items: center;
+  }
+  &__btns{
+    padding-top: 10px;
+  }
+  &__btn{
+    padding: 9px 20px;
+    background: #0dc267;
+    color: #f1f4f9;
+    border: none;
+    border-radius: 5px;
+    &:hover{
+      background: #f1f4f9;
+      color: #0dc267;
+      border: #0dc267 0.5px solid;
+    }
   }
 }
