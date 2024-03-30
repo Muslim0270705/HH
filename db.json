@@ -708,5 +708,42 @@
         "name": "Отдел маркетинга и рекламы"
       }
     }
+  ],
+  "works": [
+    {
+      "id": 1,
+      "title": "Front-end"
+    },
+    {
+      "id": 2,
+      "title": "Back-end"
+    },{
+      "id": 3,
+      "title": "dev-end"
+    },
+    {
+      "id": 4,
+      "title": "mobile-end"
+    },
+    {
+      "id": 5,
+      "title": "android-end"
+    },
+    {
+      "id": 6,
+      "title": "Ios-end"
+    },
+    {
+      "id": 7,
+      "title": "Pm"
+    },
+    {
+      "id": 8,
+      "title": "HR-S"
+    },
+    {
+      "id": 2,
+      "title": "Front-end MID"
+    }
   ]
 }

@@ -11,7 +11,14 @@ const Register = () => {
     const [userL,setUserL] = useState({
         id:uuidv4(),
         name:"",
+        lastName:"",
+        tell:"",
         email:"",
+        role:"user",
+        cv: [
+
+        ],
+        genre:"",
         password:"",
     })
     const dispatch = useDispatch()

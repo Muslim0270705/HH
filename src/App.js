@@ -8,6 +8,7 @@ import Help from "./pages/Help/Help";
 import Summary from "./pages/Summary/Summary";
 import Login from "./pages/Auth/Login/Login";
 import Response from "./pages/Responses/Response";
+import NewCv from "./pages/NewCv/NewCv";
 function App() {
     const role = [
         {
@@ -29,6 +30,7 @@ function App() {
             <Route path={"/"} element={<Home/>}/>
             <Route path={"/help"} element={<Help/>}/>
             <Route path={"/summary"} element={<Summary/>}/>
+            <Route path={"/cv"} element={<NewCv/>}/>
             <Route path={"/response"} element={<Response/>}/>
         </Route>
         <Route path={"/login"} element={<Login/>}/>
