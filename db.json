@@ -717,7 +717,8 @@
     {
       "id": 2,
       "title": "Back-end"
-    },{
+    },
+    {
       "id": 3,
       "title": "dev-end"
     },
@@ -744,6 +745,59 @@
     {
       "id": 2,
       "title": "Front-end MID"
+    }
+  ],
+  "cv": [
+    {
+      "id": "6615fcac-43ac-421e-acf6-3abee69ccdae",
+      "profession": "Front-end",
+      "name": "Muslim",
+      "lastName": "sgdsgds",
+      "surname": "gdsgsdg",
+      "genre": "woman",
+      "tel": "0555956756",
+      "company": "hdshdshdsh",
+      "positions": "hsdhdshd",
+      "positionsDesc": "Ezsrdexfcgvhbjnkmjbhjvgcfxdzsdfxgchvjbknlm;",
+      "education": "dshgdshsdhsd",
+      "educationalInstitution": "",
+      "faculty": "dshdshdsh",
+      "specialization": "dshdshsdh",
+      "yearEnd": "2990"
+    },
+    {
+      "id": "6615fcac-43ac-421e-acf6-3abee69ccdae",
+      "profession": "Front-end",
+      "name": "Muslim",
+      "lastName": "sgdsgds",
+      "surname": "gdsgsdg",
+      "genre": "woman",
+      "tel": "0555956756",
+      "company": "hdshdshdsh",
+      "positions": "hsdhdshd",
+      "positionsDesc": "Ezsrdexfcgvhbjnkmjbhjvgcfxdzsdfxgchvjbknlm;",
+      "education": "dsgdshdsh",
+      "educationalInstitution": "",
+      "faculty": "dshdshdsh",
+      "specialization": "dshdshsdh",
+      "yearEnd": "214125"
+    },
+    {
+      "id": "c92169b4-d598-4b63-b504-6883ae79085c",
+      "profession": "Front-end",
+      "name": "Muslim",
+      "lastName": "215215125",
+      "surname": "12521521",
+      "genre": "man",
+      "tel": "2512512512",
+      "company": "5125125",
+      "positions": "215125",
+      "positionsDesc": "1251235dsfdsegfew",
+      "education": "gdsgdsgdsgds",
+      "educationalInstitution": "",
+      "faculty": "215125fdsgds",
+      "specialization": "gdsgsdg",
+      "yearEnd": "2000"
     }
   ]
 }

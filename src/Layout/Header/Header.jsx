@@ -22,7 +22,6 @@ const Header = () => {
                             <Link to={"/summary"}>
                                 <p className="header__info">Мое резюме</p>
                             </Link>
-
                             <Link to={"/response"}>
                                 <p className="header__info">Oтклики</p>
                             </Link>

@@ -1,6 +1,19 @@
 import React from 'react';
+import {useDispatch} from "react-redux";
+import {postCv} from "../../redux/cv/cv";
+import {useNavigate} from "react-router-dom";
 
-const University = ({setIdPages,idP}) => {
+const University = ({setIdPages,idP,setObj,obj}) => {
+    const onChange = (e) => {
+        setObj({...obj,[e.target.name]: e.target.value})
+    }
+    const dispatch = useDispatch()
+    const navigate = useNavigate()
+    const postC = () => {
+        if(obj.profession.length && obj.name.length && obj.lastName.length && obj.tel.length && obj.surname.length && obj.genre.length && obj.positions && obj.positionsDesc && obj.company && obj.education && obj.yearEnd && obj.specialization && obj.faculty){
+            dispatch(postCv(obj)).then(() => navigate("/"))
+        }
+    }
     return (
         <div className={"university"}>
             <div className="container__small">
@@ -26,20 +39,20 @@ const University = ({setIdPages,idP}) => {
                         <h2 className="university__title">
                             Название учебного заведения
                         </h2>
-                        <input className={"university__input"} placeholder={"Название учебного заведения"} type="text"/>
+                        <input  name={"education"} onChange={(e) => onChange(e)} className={"university__input"} placeholder={"Название учебного заведения"} type="text"/>
                         <h3 className="university__title">
                             Факультет
                         </h3>
-                        <input className={"university__input"} type="text"/>
+                        <input  name={"faculty"} onChange={(e) => onChange(e)} className={"university__input"} type="text"/>
                         <h3 className="university__title">
                             Специализация
                         </h3>
-                        <input className={"university__input"} type="text"/>
+                        <input  name={"specialization"} onChange={(e) => onChange(e)} className={"university__input"} type="text"/>
                         <h3 className="university__title">
                             Год окончания
                         </h3>
                         <div className="university__years">
-                            <input className={"university__year"} type="number"/>
+                            <input  name={"yearEnd"} onChange={(e) => onChange(e)} className={"university__year"} type="number"/>
                             <p className="university__subtitle">
                                 Если ещё учитесь, укажите год <br/> предполагаемого окончания
                             </p>
@@ -51,7 +64,7 @@ const University = ({setIdPages,idP}) => {
                             <button onClick={() => setIdPages(idP - 1)} className="cv__prev">
                                 Назад
                             </button>
-                            <button className="cv__next">
+                            <button onClick={postC} className="cv__next">
                                 Создать
                             </button>
 
