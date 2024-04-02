@@ -1,0 +1,121 @@
+.university{
+  padding:  0;
+  &__row{
+    margin: 0;
+  }
+  &__shadow{
+    box-shadow: -2px 0 24px #2a313752;
+    padding: 100px 60px;
+  }
+  &__title{
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+  &__input{
+    font-size: 15px;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    padding: 0 12px;
+    margin-bottom: 35px;
+    border-radius: 4px;
+    color: #2a3137;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    background-color: #fff;
+    line-height: 38px;
+    border: 1px solid #aabbca;
+    outline: none;
+  }
+  &__input:focus{
+    border: 1px solid #0070ff;
+  }
+  &__years{
+    display: flex;
+    column-gap: 18px;
+  }
+  &__year{
+    font-size: 14px;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 120px;
+    height: 40px;
+    padding: 0 12px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    color: #2a3137;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    background-color: #fff;
+    line-height: 38px;
+    border: 1px solid #aabbca;
+    outline: none;
+  }
+  &__year:focus{
+    border: 1px solid #0070ff;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  &__subtitle{
+    color: #5e6c77;
+    font-size: 15px;
+  }
+  &__btn{
+    padding: 12px 20px;
+    background: white;
+    color: #468ffd;
+    border: 1px solid #468ffd;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 40px;
+  }
+  &__prog{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-bottom: 25px;
+    div{
+      width: calc(20% - 2.4px);
+      height: 5px;
+      border: 0.5px solid grey;
+      &:first-child{
+        border-bottom-left-radius:3px;
+        border-top-left-radius:3px;
+        background: #ff4d3a;
+      }
+      &:last-child{
+        border-bottom-right-radius:3px;
+        border-top-right-radius:3px;
+      }
+    }
+  }
+  &__btns{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+  }
+  &__next{
+    padding: 15px 30px;
+    background: #468ffd;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+
+    font-size: var(--bloko-typography-button-medium-font-size-v0-12-2);
+  }
+  &__prev{
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: var(--bloko-typography-button-medium-font-size-v0-12-2);
+  }
+}

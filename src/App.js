@@ -10,6 +10,7 @@ import Login from "./pages/Auth/Login/Login";
 import Response from "./pages/Responses/Response";
 import NewCv from "./pages/NewCv/NewCv";
 import Names from "./pages/Names/Names";
+import University from "./pages/University/University";
 function App() {
     const role = [
         {
@@ -34,6 +35,7 @@ function App() {
             <Route path={"/cv"} element={<NewCv/>}/>
             <Route path={"/response"} element={<Response/>}/>
             <Route path={"/names"} element={<Names/>}/>
+            <Route path={"/university"} element={<University/>}/>
         </Route>
         <Route path={"/login"} element={<Login/>}/>
         <Route path={"/register"} element={<Register/>}/>
