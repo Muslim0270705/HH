@@ -18,11 +18,17 @@ const Header = () => {
                                      className="header__img"/>
                             </Link>
                             <p className="header__info">Работодателям</p>
+<<<<<<< HEAD
                             <Link to={"/"}>
                                 <p className="header__info">Мое резюме</p>
                             </Link>
-                            <Link to={"/summary"}><p className="header__info">Мое резюме</p></Link>
+=======
+                            <Link to={"/summary"}>
+                                <p className="header__info">Мое резюме</p>
+                            </Link>
 
+>>>>>>> 16ed821eae67ee9f33fdb6d5fe8ce5c07613ba09
+                            <Link to={"/summary"}><p className="header__info">Мое резюме</p></Link>
                             <Link to={"/response"}>
                                 <p className="header__info">Oтклики</p>
                             </Link>
@@ -45,7 +51,6 @@ const Header = () => {
                                     </p>
                                 </Link>
                             }
-
                         </div>
                     </div>
                 </div>

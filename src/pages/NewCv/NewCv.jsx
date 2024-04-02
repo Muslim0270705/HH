@@ -1,7 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import {useDispatch, useSelector} from "react-redux";
 import {getWorks} from "../../redux/works/works";
+<<<<<<< HEAD
 import { Link } from 'react-router-dom';
+=======
+import {Link} from "react-router-dom";
+>>>>>>> 16ed821eae67ee9f33fdb6d5fe8ce5c07613ba09
 
 const NewCv = () => {
     const [value,setValue] = useState("")
@@ -54,11 +58,19 @@ const NewCv = () => {
                         <button className="cv__prev">
                             Назад
                         </button>
+<<<<<<< HEAD
                         <Link to={"/abstract"}>
+=======
+                        <Link to={"/names"}>
+>>>>>>> 16ed821eae67ee9f33fdb6d5fe8ce5c07613ba09
                             <button className="cv__next">
                                 Сохранить и продолжить
                             </button>
                         </Link>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 16ed821eae67ee9f33fdb6d5fe8ce5c07613ba09
                     </div>
                 </div>
             </div>

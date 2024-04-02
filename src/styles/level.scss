@@ -1,0 +1,25 @@
+.level{
+  background: #fefcfc;
+  &__row{
+    box-shadow: -2px 0 24px #2a313752;
+    padding: 100px 60px;
+  }
+  &__inputs{
+
+  }
+  &__title{
+    margin-bottom: 20px;
+    font-size: 25px;
+    padding: 15px;
+  }
+  &__label {
+    display: block;
+    align-items: center;
+  }
+  &__input{
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 15px 0;
+    gap: 12px 4px;
+  }
+}
