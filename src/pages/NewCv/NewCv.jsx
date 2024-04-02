@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {useDispatch, useSelector} from "react-redux";
 import {getWorks} from "../../redux/works/works";
+import {Link} from "react-router-dom";
 
 const NewCv = () => {
     const [value,setValue] = useState("")
@@ -53,9 +54,11 @@ const NewCv = () => {
                         <button className="cv__prev">
                             Назад
                         </button>
-                        <button className="cv__next">
-                            Сохранить и продолжить
-                        </button>
+                        <Link to={"/names"}>
+                            <button className="cv__next">
+                                Сохранить и продолжить
+                            </button>
+                        </Link>
 
                     </div>
 

@@ -18,9 +18,11 @@ const Header = () => {
                                      className="header__img"/>
                             </Link>
                             <p className="header__info">Работодателям</p>
+                            <Link to={"/summary"}>
+                                <p className="header__info">Мое резюме</p>
+                            </Link>
 
                             <Link to={"/summary"}><p className="header__info">Мое резюме</p></Link>
-
                             <Link to={"/response"}>
                                 <p className="header__info">Oтклики</p>
                             </Link>
@@ -43,7 +45,6 @@ const Header = () => {
                                     </p>
                                 </Link>
                             }
-
                         </div>
                     </div>
                 </div>

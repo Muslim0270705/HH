@@ -28,11 +28,11 @@ const Home = () => {
                                     </p>
                                     <div className="home__group">
                                         <p className="home__company">
-                                            MOTION WEB IT-АКАДЕМИЯ
+                                            {item.company}
                                         </p>
 
                                         <p className="home__city">
-                                            Бишкек
+                                            {item.location}
                                         </p>
                                     </div>
 
