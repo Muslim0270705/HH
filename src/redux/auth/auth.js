@@ -13,6 +13,17 @@ export const register = createAsyncThunk(
         }
     }
 );
+export const getUser = createAsyncThunk(
+    "auth/getUser",
+    async (userL, { rejectWithValue }) => {
+        try {
+            const res = await axios("https://storedb.onrender.com/users");
+            return res.data;
+        } catch (err) {
+            return rejectWithValue(err.message);
+        }
+    }
+);
 export const login = createAsyncThunk(
     "auth/login",
     async (userL, { rejectWithValue }) => {
@@ -32,6 +43,7 @@ const authSlice = createSlice({
         data: JSON.parse(localStorage.getItem("user")),
         status: "",
         error: "",
+        users:"",
         dataLength: 0,
     },
     reducers: {
@@ -71,6 +83,19 @@ const authSlice = createSlice({
                 state.data = action.payload;
                 state.dataLength = action.payload.length;
                 localStorage.setItem("user",JSON.stringify(action.payload))
+            })
+            .addCase(getUser.pending, (state, action) => {
+                state.status = "loading";
+                state.error = "";
+            })
+            .addCase(getUser.rejected, (state, action) => {
+                state.status = "error";
+                state.error = action.payload;
+            })
+            .addCase(getUser.fulfilled, (state, action) => {
+                state.status = "resolve";
+                state.error = "";
+                state.user = action.payload;
             });
     },
 });

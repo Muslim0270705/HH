@@ -1,5 +1,5 @@
 
-import Home from "./pages/Home/Home";
+import xHome from "./pages/Home/Home";
 import "./styles/style.scss"
 import {Routes,Route} from "react-router-dom";
 import Layout from "./Layout/Layout";
@@ -9,7 +9,7 @@ import Summary from "./pages/Summary/Summary";
 import Login from "./pages/Auth/Login/Login";
 import Response from "./pages/Responses/Response";
 import NewCv from "./pages/NewCv/NewCv";
-import Level from "./pages/ level/level";
+import Level from "./pages/Level/Level";
 import Names from "./pages/Names/Names";
 import University from "./pages/University/University";
 function App() {

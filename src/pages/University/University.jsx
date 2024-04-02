@@ -1,25 +1,25 @@
 import React from 'react';
 
-const University = () => {
+const University = ({setIdPages,idP}) => {
     return (
         <div className={"university"}>
             <div className="container__small">
                 <div className="university__shadow">
                     <div className="university__row">
                         <div className={'cv__prog'}>
-                            <div>
+                            <div style={{background: "#ff4d3a"}}>
 
                             </div>
-                            <div>
+                            <div style={{background: "#ff4d3a"}}>
 
                             </div>
-                            <div>
+                            <div style={{background: "#ff4d3a"}}>
 
                             </div>
-                            <div>
+                            <div style={{background: "#ff4d3a"}}>
 
                             </div>
-                            <div>
+                            <div style={{background: "#ff4d3a"}}>
 
                             </div>
                         </div>
@@ -48,12 +48,14 @@ const University = () => {
                             Добавить еще учебное заведение
                         </button>
                         <div className={"cv__btns"}>
-                            <button className="cv__prev">
+                            <button onClick={() => setIdPages(idP - 1)} className="cv__prev">
                                 Назад
                             </button>
                             <button className="cv__next">
-                                Сохранить и продолжить
+                                Создать
                             </button>
+
+
                         </div>
                     </div>
                 </div>

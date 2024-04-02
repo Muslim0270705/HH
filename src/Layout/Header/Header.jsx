@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from "react-router-dom"
+import {Link, useNavigate} from "react-router-dom"
 import {useDispatch, useSelector} from "react-redux";
 import { IoLogOutOutline } from "react-icons/io5";
 import {logout} from "../../redux/auth/auth";
@@ -7,6 +7,7 @@ import {logout} from "../../redux/auth/auth";
 const Header = () => {
     const {data} = useSelector(store => store.auth)
     const dispatch = useDispatch()
+    const navigate = useNavigate()
     return (
             <header className="header">
                 <div className="container">
@@ -22,7 +23,6 @@ const Header = () => {
                                 <p className="header__info">Мое резюме</p>
                             </Link>
 
-                            <Link to={"/summary"}><p className="header__info">Мое резюме</p></Link>
                             <Link to={"/response"}>
                                 <p className="header__info">Oтклики</p>
                             </Link>
@@ -34,7 +34,7 @@ const Header = () => {
                             <a className="header__info">
                                 Поиск
                             </a>
-                            <button className="header__btn">
+                            <button onClick={() => navigate("/cv")} className="header__btn">
                                 Создать резюме
                             </button>
                             {
