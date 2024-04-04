@@ -17,7 +17,7 @@ const NewCv = () => {
     const [obj,setObj] = useState({
         id:uuidv4(),
         profession:"",
-        name:"",
+        name:JSON.parse(localStorage.getItem("user")).user.name,
         lastName:"",
         surname:"",
         genre:"",
@@ -32,7 +32,6 @@ const NewCv = () => {
         yearEnd:""
 
     })
-    console.log(obj)
     useEffect(() => {
         dispatch(getWorks())
         dispatch(getUser())

@@ -30,7 +30,7 @@ const Names = ({setIdPages,idP,setObj,obj}) => {
                         <h3 className="names__name-text">Фамилия</h3>
                         <input name={"lastName"} onChange={(e) => onChange(e)}  className="names__name-first" type={"text"}></input>
                         <h3 className="names__name-text">Имя</h3>
-                        <input name={"name"} onChange={(e) => onChange(e)}  className="names__name-last" type="text"/>
+                        <input name={"name"} value={obj.name}  className="names__name-last" type="text"/>
                         <h3 className="names__name-text">Отчество</h3>
                         <input name={"surname"} onChange={(e) => onChange(e)}  className="names__name-surname" type="text"/>
                     </div>
