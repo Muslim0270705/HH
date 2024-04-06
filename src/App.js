@@ -1,5 +1,4 @@
 
-import xHome from "./pages/Home/Home";
 import "./styles/style.scss"
 import {Routes,Route} from "react-router-dom";
 import Layout from "./Layout/Layout";
@@ -11,6 +10,7 @@ import Response from "./pages/Responses/Response";
 import NewCv from "./pages/NewCv/NewCv";
 import Level from "./pages/Level/Level";
 import Home from "./pages/Home/Home";
+import Resume from "./pages/Resume/Resume";
 function App() {
     const role = [
         {
@@ -35,6 +35,7 @@ function App() {
             <Route path={"/level"} element={<Level/>}/>
             <Route path={"/cv"} element={<NewCv/>}/>
             <Route path={"/response"} element={<Response/>}/>
+            <Route path={"/resume"} element={<Resume/>}/>
         </Route>
         <Route path={"/login"} element={<Login/>}/>
         <Route path={"/register"} element={<Register/>}/>
