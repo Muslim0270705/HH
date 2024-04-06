@@ -11,6 +11,7 @@ import NewCv from "./pages/NewCv/NewCv";
 import Level from "./pages/Level/Level";
 import Home from "./pages/Home/Home";
 import Resume from "./pages/Resume/Resume";
+import Description from "./pages/Description/Description";
 function App() {
     const role = [
         {
@@ -36,6 +37,7 @@ function App() {
             <Route path={"/cv"} element={<NewCv/>}/>
             <Route path={"/response"} element={<Response/>}/>
             <Route path={"/resume"} element={<Resume/>}/>
+            <Route path={"/description"} element={<Description/>}/>
         </Route>
         <Route path={"/login"} element={<Login/>}/>
         <Route path={"/register"} element={<Register/>}/>
