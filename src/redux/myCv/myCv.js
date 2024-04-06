@@ -31,12 +31,27 @@ export const updateMyCv = createAsyncThunk(
         }
     }
 );
+export const getOneMyCv = createAsyncThunk(
+    "myCv/getOneMyCv",
+    async (id, { rejectWithValue }) => {
+        try {
+            const res = await axios(`/cv/${id}`);
+            if (res.status !== 200) {
+                throw new Error("Server error !");
+            }
+            return res.data;
+        } catch (err) {
+            return rejectWithValue(err.message);
+        }
+    }
+);
 
 
 const myCvSlice = createSlice({
     name: "myCv",
     initialState: {
         data: [],
+        oneCv:{},
         list:[],
         status: "",
         error: "",
@@ -73,6 +88,20 @@ const myCvSlice = createSlice({
                 state.status = "resolve";
                 state.error = "";
                 state.data = state.data.map(item => item.id === action.payload.id ? action.payload : item);
+                state.dataLength = action.payload.length;
+            })
+            .addCase(getOneMyCv.pending, (state, action) => {
+                state.status = "loading";
+                state.error = "";
+            })
+            .addCase(getOneMyCv.rejected, (state, action) => {
+                state.status = "error";
+                state.error = action.payload;
+            })
+            .addCase(getOneMyCv.fulfilled, (state, action) => {
+                state.status = "resolve";
+                state.error = "";
+                state.oneCv = action.payload;
                 state.dataLength = action.payload.length;
             });
     },

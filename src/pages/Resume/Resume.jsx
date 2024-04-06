@@ -1,9 +1,20 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { LuArrowDownToLine } from "react-icons/lu";
 import { IoPrintOutline } from "react-icons/io5";
 import { RiDeleteBinLine } from "react-icons/ri";
+import {useDispatch, useSelector} from "react-redux";
+import {useParams} from "react-router-dom";
+import {getOneMyCv} from "../../redux/myCv/myCv";
 
 const Resume = () => {
+    const dispatch = useDispatch()
+    const {oneCv} = useSelector(store => store.myCv)
+    const params = useParams()
+    const [chageGenre,setChageGenre] = useState(false)
+    console.log(params)
+    useEffect(() => {
+        dispatch(getOneMyCv(params.id))
+    }, [params.id]);
     return (
         <div className={"resume"}>
             <div className="container">
@@ -16,13 +27,18 @@ const Resume = () => {
                             Сейчас на сайте
                         </p>
                         <h2 className="resume__title">
-                            Токтогулова Чинара
+                            {oneCv.name} {oneCv.lastName}
                         </h2>
-                        <p className="resume__subtitle">
-                            Женщина
-                        </p>
+                        {
+                            chageGenre ? <input type="text"/> :
+                                <p className="resume__subtitle">
+                                {oneCv.genre}
+                            </p>
+                        }
+
+
                         <li className={"resume__redux"}>
-                            <a  href="#">Редактировать</a>
+                            <a  href="#" onClick={() => setChageGenre(!chageGenre)}>Редактировать</a>
                         </li>
                         <p className="resume__subtitles">
                            Рассматриваю предложения
@@ -31,7 +47,7 @@ const Resume = () => {
                             Контакты
                         </p>
                         <p className="resume__subtitle">
-                            +996 (552) 44-11-57 — предпочитаемый способ связи
+                            +996 {oneCv.tel} — предпочитаемый способ связи
                         </p>
                         <li className={"resume__email"}>
                             <a  href="#">toktogulovacinara8@gmail.com</a>

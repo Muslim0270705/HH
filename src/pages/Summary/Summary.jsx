@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import {useDispatch, useSelector} from "react-redux";
 import {getMyCv, updateMyCv} from "../../redux/myCv/myCv";
+import {Link} from "react-router-dom";
 
 const Summary = () => {
     const {data} = useSelector(store => store.myCv)
@@ -50,7 +51,7 @@ const Summary = () => {
                 <div className="summary__cards">
                     {
                         data.map(item => (
-                            <div className="summary__card" onClick={() => dispatch(updateMyCv({...item,views:item.views + 1}))}>
+                            <Link to={`/resume/${item.id}`} className="summary__card" onClick={() => dispatch(updateMyCv({...item,views:item.views + 1}))}>
                                 <a className={"summary__titles"} href="#">
                                     {item.profession}
                                 </a>
@@ -81,7 +82,7 @@ const Summary = () => {
                                     <a href=""> Редактировать</a>
                                     <a href=""> Дублировать</a>
                                 </div>
-                            </div>
+                            </Link>
                         ))
                     }
                 </div>

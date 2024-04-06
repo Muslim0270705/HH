@@ -36,7 +36,7 @@ function App() {
             <Route path={"/level"} element={<Level/>}/>
             <Route path={"/cv"} element={<NewCv/>}/>
             <Route path={"/response"} element={<Response/>}/>
-            <Route path={"/resume"} element={<Resume/>}/>
+            <Route path={"/resume/:id"} element={<Resume/>}/>
             <Route path={"/description"} element={<Description/>}/>
         </Route>
         <Route path={"/login"} element={<Login/>}/>

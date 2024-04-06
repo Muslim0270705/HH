@@ -749,7 +749,7 @@
   ],
   "cv": [
     {
-      "views": 45,
+      "views": 63,
       "id": "a1254c8e-7cc0-4f65-b77c-5726e310b92f",
       "profession": "Front-end",
       "name": "Phone",
@@ -765,6 +765,24 @@
       "faculty": "gesdg",
       "specialization": "sehseh",
       "yearEnd": "2008"
+    },
+    {
+      "id": "cef7c4fd-ce2b-414a-8caa-bf8ca11cb3a4",
+      "profession": "dev-end",
+      "name": "Phone",
+      "lastName": "sgdsgds",
+      "surname": "gdsgsdg",
+      "genre": "man",
+      "tel": "+215125215",
+      "company": "itRun",
+      "positions": "Suport ",
+      "positionsDesc": "asdgsbghfdhdfbfd",
+      "education": "gsdgsd",
+      "educationalInstitution": "",
+      "faculty": "gsdgsdg",
+      "specialization": "dsgsdgd",
+      "yearEnd": "2020",
+      "views": 2
     }
   ]
 }
