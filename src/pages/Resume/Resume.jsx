@@ -11,10 +11,12 @@ const Resume = () => {
     const {oneCv} = useSelector(store => store.myCv)
     const params = useParams()
     const [chageGenre,setChageGenre] = useState(false)
-    console.log(params)
+    const [obj,setObj] = useState({})
     useEffect(() => {
         dispatch(getOneMyCv(params.id))
+        setObj({...oneCv})
     }, [params.id]);
+    console.log(obj)
     return (
         <div className={"resume"}>
             <div className="container">
@@ -30,13 +32,23 @@ const Resume = () => {
                             {oneCv.name} {oneCv.lastName}
                         </h2>
                         {
-                            chageGenre ? <input type="text"/> :
+                            chageGenre ? <form onSubmit={}>
+                                    <select onChange={(e) => setObj({...obj,genre:e.target.value})}>
+                                        <option value="man">
+                                            man
+                                        </option>
+                                        <option value="woman">
+                                            woman
+                                        </option>
+                                    </select>
+                                    <button type={"submit"}>
+                                        Cохранить
+                                    </button>
+                                </form> :
                                 <p className="resume__subtitle">
                                 {oneCv.genre}
                             </p>
                         }
-
-
                         <li className={"resume__redux"}>
                             <a  href="#" onClick={() => setChageGenre(!chageGenre)}>Редактировать</a>
                         </li>
