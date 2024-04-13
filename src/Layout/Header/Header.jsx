@@ -28,6 +28,9 @@ const Header = () => {
                             <Link to={"/help"}>
                                 <p className="header__info">Помощь</p>
                             </Link>
+                            <Link to={"/adminpanel"}>
+                                <p className="header__info">adminpanel</p>
+                            </Link>
                         </div>
                         <div className="header__left">
                             <a className="header__info">

@@ -5,6 +5,7 @@ import { RiDeleteBinLine } from "react-icons/ri";
 import {useDispatch, useSelector} from "react-redux";
 import {useParams} from "react-router-dom";
 import {getOneMyCv, updateMyCv} from "../../redux/myCv/myCv";
+import {getCv} from "../../redux/cv/cv";
 
 const Resume = () => {
     const dispatch = useDispatch()
@@ -14,7 +15,7 @@ const Resume = () => {
 
     useEffect(() => {
         dispatch(getOneMyCv(params.id))
-    }, [params.id,oneCv]);
+    }, [params.id]);
     return (
         <div className={"resume"}>
             <div className="container">
@@ -34,6 +35,9 @@ const Resume = () => {
                                 e.preventDefault()
                                 dispatch(updateMyCv({...oneCv,genre:e.target[0].value}))
                                 setChageGenre(false)
+                                setTimeout(() => {
+                                    dispatch(getOneMyCv(params.id))
+                                },1000)
                             }}>
                                     <select>
                                         <option value="man">

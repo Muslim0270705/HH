@@ -711,39 +711,39 @@
   ],
   "works": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Front-end"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Back-end"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "dev-end"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "mobile-end"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "android-end"
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Ios-end"
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "Pm"
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "HR-S"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Front-end MID"
     }
   ],
@@ -755,9 +755,9 @@
       "name": "Phone",
       "lastName": "safasg",
       "surname": "gasgas",
-      "genre": "man",
+      "genre": "woman",
       "tel": "21512512512",
-      "company": "gsdgds",
+      "company": "124",
       "positions": "32t32wf",
       "positionsDesc": "eqwt23t32tg3w",
       "education": "fdsgdsgdsa",
@@ -774,7 +774,7 @@
       "surname": "gdsgsdg",
       "genre": "man",
       "tel": "+215125215",
-      "company": "itRun",
+      "company": "ItrunDev",
       "positions": "Suport ",
       "positionsDesc": "asdgsbghfdhdfbfd",
       "education": "gsdgsd",
@@ -783,6 +783,24 @@
       "specialization": "dsgsdgd",
       "yearEnd": "2020",
       "views": 3
+    },
+    {
+      "id": "1a3c5657-5c1d-41c9-b402-f0ff10c7e7a4",
+      "profession": "Back-end",
+      "name": "Admin",
+      "lastName": "Adm",
+      "surname": "admovich",
+      "genre": "woman",
+      "tel": "0555555555",
+      "company": "Google",
+      "positions": "Marketolog",
+      "positionsDesc": "Admin",
+      "education": "MIT",
+      "educationalInstitution": "",
+      "faculty": "PVO",
+      "specialization": "Market",
+      "yearEnd": "2020",
+      "views": 1
     }
   ]
 }

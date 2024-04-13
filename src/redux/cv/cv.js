@@ -16,6 +16,20 @@ export const postCv = createAsyncThunk(
         }
     }
 );
+export const getCv = createAsyncThunk(
+    "cv/getCv",
+    async (obj, { rejectWithValue }) => {
+        try {
+            const res = await axios("/cv");
+            if (res.status !== 200) {
+                throw new Error("Server error !");
+            }
+            return res.data;
+        } catch (err) {
+            return rejectWithValue(err.message);
+        }
+    }
+);
 
 
 const cvSlice = createSlice({
@@ -40,6 +54,20 @@ const cvSlice = createSlice({
                 state.error = action.payload;
             })
             .addCase(postCv.fulfilled, (state, action) => {
+                state.status = "resolve";
+                state.error = "";
+                state.data = [...state.data,action.payload];
+                state.dataLength = action.payload.length;
+            })
+            .addCase(getCv.pending, (state, action) => {
+                    state.status = "loading";
+                    state.error = "";
+                })
+            .addCase(getCv.rejected, (state, action) => {
+                state.status = "error";
+                state.error = action.payload;
+            })
+            .addCase(getCv.fulfilled, (state, action) => {
                 state.status = "resolve";
                 state.error = "";
                 state.data = action.payload;

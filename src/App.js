@@ -12,6 +12,7 @@ import Level from "./pages/Level/Level";
 import Home from "./pages/Home/Home";
 import Resume from "./pages/Resume/Resume";
 import Description from "./pages/Description/Description";
+import AdminPanel from "./pages/adminpanel/AdminPanel";
 function App() {
     const role = [
         {
@@ -38,6 +39,7 @@ function App() {
             <Route path={"/response"} element={<Response/>}/>
             <Route path={"/resume/:id"} element={<Resume/>}/>
             <Route path={"/description"} element={<Description/>}/>
+            <Route path={"/adminpanel"} element={<AdminPanel/>}/>
         </Route>
         <Route path={"/login"} element={<Login/>}/>
         <Route path={"/register"} element={<Register/>}/>
