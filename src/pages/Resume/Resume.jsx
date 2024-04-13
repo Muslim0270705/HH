@@ -4,19 +4,17 @@ import { IoPrintOutline } from "react-icons/io5";
 import { RiDeleteBinLine } from "react-icons/ri";
 import {useDispatch, useSelector} from "react-redux";
 import {useParams} from "react-router-dom";
-import {getOneMyCv} from "../../redux/myCv/myCv";
+import {getOneMyCv, updateMyCv} from "../../redux/myCv/myCv";
 
 const Resume = () => {
     const dispatch = useDispatch()
     const {oneCv} = useSelector(store => store.myCv)
     const params = useParams()
     const [chageGenre,setChageGenre] = useState(false)
-    const [obj,setObj] = useState({})
+
     useEffect(() => {
         dispatch(getOneMyCv(params.id))
-        setObj({...oneCv})
-    }, [params.id]);
-    console.log(obj)
+    }, [params.id,oneCv]);
     return (
         <div className={"resume"}>
             <div className="container">
@@ -32,8 +30,12 @@ const Resume = () => {
                             {oneCv.name} {oneCv.lastName}
                         </h2>
                         {
-                            chageGenre ? <form onSubmit={}>
-                                    <select onChange={(e) => setObj({...obj,genre:e.target.value})}>
+                            chageGenre ? <form onSubmit={(e) => {
+                                e.preventDefault()
+                                dispatch(updateMyCv({...oneCv,genre:e.target[0].value}))
+                                setChageGenre(false)
+                            }}>
+                                    <select>
                                         <option value="man">
                                             man
                                         </option>
