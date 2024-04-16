@@ -8,6 +8,7 @@ const Header = () => {
     const {data} = useSelector(store => store.auth)
     const dispatch = useDispatch()
     const navigate = useNavigate()
+
     return (
             <header className="header">
                 <div className="container">
@@ -19,18 +20,27 @@ const Header = () => {
                                      className="header__img"/>
                             </Link>
                             <p className="header__info">Работодателям</p>
-                            <Link to={"/summary"}>
-                                <p className="header__info">Мое резюме</p>
-                            </Link>
+                            {
+                                data?.user?.role === "user" ?  <Link to={"/summary"}>
+                                    <p className="header__info">Мое резюме</p>
+                                </Link> : data?.user?.role === "manager" ?
+                                    <Link to={"/myvs"}>
+                                        <p className="header__info">Мои Вакансии</p>
+                                    </Link> : ""
+                            }
+
                             <Link to={"/response"}>
                                 <p className="header__info">Oтклики</p>
                             </Link>
                             <Link to={"/help"}>
                                 <p className="header__info">Помощь</p>
                             </Link>
-                            <Link to={"/adminpanel"}>
-                                <p className="header__info">adminpanel</p>
-                            </Link>
+                            {
+                                data?.user?.role === "admin" ? <Link to={"/adminpanel"}>
+                                    <p className="header__info">adminpanel</p>
+                                </Link> : ""
+                            }
+
                         </div>
                         <div className="header__left">
                             <a className="header__info">

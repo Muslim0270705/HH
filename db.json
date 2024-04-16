@@ -1,21 +1,159 @@
 {
   "vacancies": [
     {
+      "users": [
+        {
+          "id": "33a01521-df5b-463e-b807-6feb375adb8a",
+          "profession": "Front-end",
+          "name": "Muslim",
+          "lastName": "sgdsgds",
+          "surname": "gdsgsdg",
+          "genre": "man",
+          "tel": "123123123",
+          "company": "Mus",
+          "positions": "hsdhdshd",
+          "positionsDesc": "21rfgdsgdsh",
+          "education": "hdshdsh",
+          "educationalInstitution": "",
+          "faculty": "sdhdshsd",
+          "specialization": "hsdhds",
+          "yearEnd": "1088"
+        },
+        {
+          "id": "33a01521-df5b-463e-b807-6feb375adb8a",
+          "profession": "Front-end",
+          "name": "Muslim",
+          "lastName": "sgdsgds",
+          "surname": "gdsgsdg",
+          "genre": "man",
+          "tel": "123123123",
+          "company": "Mus",
+          "positions": "hsdhdshd",
+          "positionsDesc": "21rfgdsgdsh",
+          "education": "hdshdsh",
+          "educationalInstitution": "",
+          "faculty": "sdhdshsd",
+          "specialization": "hsdhds",
+          "yearEnd": "1088"
+        },
+        {
+          "id": "33a01521-df5b-463e-b807-6feb375adb8a",
+          "profession": "Front-end",
+          "name": "Muslim",
+          "lastName": "sgdsgds",
+          "surname": "gdsgsdg",
+          "genre": "man",
+          "tel": "123123123",
+          "company": "Mus",
+          "positions": "hsdhdshd",
+          "positionsDesc": "21rfgdsgdsh",
+          "education": "hdshdsh",
+          "educationalInstitution": "",
+          "faculty": "sdhdshsd",
+          "specialization": "hsdhds",
+          "yearEnd": "1088"
+        },
+        {
+          "id": "33a01521-df5b-463e-b807-6feb375adb8a",
+          "profession": "Front-end",
+          "name": "Muslim",
+          "lastName": "sgdsgds",
+          "surname": "gdsgsdg",
+          "genre": "man",
+          "tel": "123123123",
+          "company": "Mus",
+          "positions": "hsdhdshd",
+          "positionsDesc": "21rfgdsgdsh",
+          "education": "hdshdsh",
+          "educationalInstitution": "",
+          "faculty": "sdhdshsd",
+          "specialization": "hsdhds",
+          "yearEnd": "1088"
+        },
+        {
+          "id": "33a01521-df5b-463e-b807-6feb375adb8a",
+          "profession": "Front-end",
+          "name": "Muslim",
+          "lastName": "sgdsgds",
+          "surname": "gdsgsdg",
+          "genre": "man",
+          "tel": "123123123",
+          "company": "Mus",
+          "positions": "hsdhdshd",
+          "positionsDesc": "21rfgdsgdsh",
+          "education": "hdshdsh",
+          "educationalInstitution": "",
+          "faculty": "sdhdshsd",
+          "specialization": "hsdhds",
+          "yearEnd": "1088"
+        },
+        {
+          "id": "33a01521-df5b-463e-b807-6feb375adb8a",
+          "profession": "Front-end",
+          "name": "Muslim",
+          "lastName": "sgdsgds",
+          "surname": "gdsgsdg",
+          "genre": "man",
+          "tel": "123123123",
+          "company": "Mus",
+          "positions": "hsdhdshd",
+          "positionsDesc": "21rfgdsgdsh",
+          "education": "hdshdsh",
+          "educationalInstitution": "",
+          "faculty": "sdhdshsd",
+          "specialization": "hsdhds",
+          "yearEnd": "1088"
+        },
+        {
+          "id": "33a01521-df5b-463e-b807-6feb375adb8a",
+          "profession": "Front-end",
+          "name": "Muslim",
+          "lastName": "sgdsgds",
+          "surname": "gdsgsdg",
+          "genre": "man",
+          "tel": "123123123",
+          "company": "Mus",
+          "positions": "hsdhdshd",
+          "positionsDesc": "21rfgdsgdsh",
+          "education": "hdshdsh",
+          "educationalInstitution": "",
+          "faculty": "sdhdshsd",
+          "specialization": "hsdhds",
+          "yearEnd": "1088"
+        },
+        {
+          "id": "33a01521-df5b-463e-b807-6feb375adb8a",
+          "profession": "Front-end",
+          "name": "Muslim",
+          "lastName": "sgdsgds",
+          "surname": "gdsgsdg",
+          "genre": "man",
+          "tel": "123123123",
+          "company": "Mus",
+          "positions": "hsdhdshd",
+          "positionsDesc": "21rfgdsgdsh",
+          "education": "hdshdsh",
+          "educationalInstitution": "",
+          "faculty": "sdhdshsd",
+          "specialization": "hsdhds",
+          "yearEnd": "1088"
+        }
+      ],
       "id": "1",
       "category": {
-        "id": 1,
-        "title": "Front-End"
+        "id": 2,
+        "title": "Back-End"
       },
-      "work": true,
-      "title": "Junior Front-end разработка",
+      "work": false,
+      "title": "Junior Back-End разработка",
       "company": "It-Run",
       "location": "Bishkek",
       "experience": {
-        "ask": 1,
-        "desc": 3
+        "ask": 0,
+        "desc": 6
       },
       "money": {
-        "ask": 1000,
+        "ask": 0,
         "desc": 6000
       },
       "schedule": "Полная занятость",
@@ -50,6 +188,25 @@
       ]
     },
     {
+      "users": [
+        {
+          "id": "33a01521-df5b-463e-b807-6feb375adb8a",
+          "profession": "Front-end",
+          "name": "Muslim",
+          "lastName": "sgdsgds",
+          "surname": "gdsgsdg",
+          "genre": "man",
+          "tel": "123123123",
+          "company": "Mus",
+          "positions": "hsdhdshd",
+          "positionsDesc": "21rfgdsgdsh",
+          "education": "hdshdsh",
+          "educationalInstitution": "",
+          "faculty": "sdhdshsd",
+          "specialization": "hsdhds",
+          "yearEnd": "1088"
+        }
+      ],
       "id": "2",
       "category": {
         "id": 2,
@@ -99,6 +256,25 @@
       ]
     },
     {
+      "users": [
+        {
+          "id": "33a01521-df5b-463e-b807-6feb375adb8a",
+          "profession": "Front-end",
+          "name": "Muslim",
+          "lastName": "sgdsgds",
+          "surname": "gdsgsdg",
+          "genre": "man",
+          "tel": "123123123",
+          "company": "Mus",
+          "positions": "hsdhdshd",
+          "positionsDesc": "21rfgdsgdsh",
+          "education": "hdshdsh",
+          "educationalInstitution": "",
+          "faculty": "sdhdshsd",
+          "specialization": "hsdhds",
+          "yearEnd": "1088"
+        }
+      ],
       "id": "3",
       "category": {
         "id": 3,
@@ -144,6 +320,7 @@
       ]
     },
     {
+      "users": [],
       "id": "4",
       "category": {
         "id": 1,
@@ -189,6 +366,7 @@
       ]
     },
     {
+      "users": [],
       "id": "5",
       "category": {
         "id": 1,
@@ -234,6 +412,7 @@
       ]
     },
     {
+      "users": [],
       "id": "6",
       "category": {
         "id": 4,
@@ -279,6 +458,7 @@
       ]
     },
     {
+      "users": [],
       "id": "7",
       "category": {
         "id": 5,
@@ -324,7 +504,8 @@
       ]
     },
     {
-      "id": "7",
+      "id": "8",
+      "users": [],
       "category": {
         "id": 6,
         "title": "Regional head of IT"
@@ -369,7 +550,8 @@
       ]
     },
     {
-      "id": "8",
+      "users": [],
+      "id": "9",
       "category": {
         "id": 1,
         "title": "Front-End"
@@ -418,7 +600,8 @@
       ]
     },
     {
-      "id": "9",
+      "id": "10",
+      "users": [],
       "category": {
         "id": 1,
         "title": "Front-End"
@@ -467,7 +650,8 @@
       ]
     },
     {
-      "id": "10",
+      "id": "11",
+      "users": [],
       "category": {
         "id": 1,
         "title": "Front-End"
@@ -516,7 +700,8 @@
       ]
     },
     {
-      "id": "11",
+      "id": "12",
+      "users": [],
       "category": {
         "id": 2,
         "title": "Back-End"
@@ -565,7 +750,8 @@
       ]
     },
     {
-      "id": "12",
+      "id": "13",
+      "users": [],
       "category": {
         "id": 2,
         "title": "Back-End"
@@ -614,7 +800,8 @@
       ]
     },
     {
-      "id": "13",
+      "id": "14",
+      "users": [],
       "category": {
         "id": 2,
         "title": "Back-End"
@@ -801,6 +988,23 @@
       "specialization": "Market",
       "yearEnd": "2020",
       "views": 1
+    },
+    {
+      "id": "33a01521-df5b-463e-b807-6feb375adb8a",
+      "profession": "Front-end",
+      "name": "Muslim",
+      "lastName": "sgdsgds",
+      "surname": "gdsgsdg",
+      "genre": "man",
+      "tel": "123123123",
+      "company": "Mus",
+      "positions": "hsdhdshd",
+      "positionsDesc": "21rfgdsgdsh",
+      "education": "hdshdsh",
+      "educationalInstitution": "",
+      "faculty": "sdhdshsd",
+      "specialization": "hsdhds",
+      "yearEnd": "1088"
     }
   ]
 }
