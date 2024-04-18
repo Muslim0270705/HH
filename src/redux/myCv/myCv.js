@@ -51,6 +51,7 @@ const myCvSlice = createSlice({
     name: "myCv",
     initialState: {
         data: [],
+        cv:[],
         oneCv:{},
         list:[],
         status: "",
@@ -74,6 +75,7 @@ const myCvSlice = createSlice({
                 state.status = "resolve";
                 state.error = "";
                 state.data = action.payload;
+                state.cv = action.payload;
                 state.dataLength = action.payload.length;
             })
             .addCase(updateMyCv.pending, (state, action) => {
@@ -88,6 +90,7 @@ const myCvSlice = createSlice({
                 state.status = "resolve";
                 state.error = "";
                 state.data = state.data.map(item => item.id === action.payload.id ? action.payload : item);
+                state.cv = state.cv.map(item => item.id === action.payload.id ? action.payload : item);
                 state.dataLength = action.payload.length;
             })
             .addCase(getOneMyCv.pending, (state, action) => {

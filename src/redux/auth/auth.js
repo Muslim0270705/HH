@@ -41,6 +41,7 @@ const authSlice = createSlice({
     name: "auth",
     initialState: {
         data: JSON.parse(localStorage.getItem("user")),
+        user:JSON.parse(localStorage.getItem("user")),
         status: "",
         error: "",
         users:"",
@@ -66,6 +67,7 @@ const authSlice = createSlice({
                 state.status = "resolve";
                 state.error = "";
                 state.data = action.payload;
+                state.user = action.payload;
                 state.dataLength = action.payload.length;
                 localStorage.setItem("user",JSON.stringify(action.payload))
             })
@@ -81,6 +83,7 @@ const authSlice = createSlice({
                 state.status = "resolve";
                 state.error = "";
                 state.data = action.payload;
+                state.user = action.payload;
                 state.dataLength = action.payload.length;
                 localStorage.setItem("user",JSON.stringify(action.payload))
             })

@@ -1,17 +1,26 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { CiHeart } from "react-icons/ci";
 import { FaRegEyeSlash } from "react-icons/fa";
 import { MdOutlineTaskAlt } from "react-icons/md";
+import {useDispatch, useSelector} from "react-redux";
+import vacancies, {getOneVacancies} from "../../redux/vacancies/vacancies";
+import {useParams} from "react-router-dom";
 
 
 
 const Description = () => {
+    const {oneV} = useSelector(store => store.vacancies)
+    const dispatch = useDispatch()
+    const {id} = useParams()
+    useEffect(() => {
+        dispatch(getOneVacancies(id))
+    },[])
     return (
         <section className={"description"}>
             <div className="container">
                 <div className="description__card">
                     <p className="description__title">
-                        Программист
+                        {oneV.title}
                     </p>
                     <div className="description__info">
                         <p className="description__experience">
