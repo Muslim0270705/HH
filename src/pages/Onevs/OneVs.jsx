@@ -19,25 +19,30 @@ const OneVs = () => {
                     {
                         oneV?.users?.map(item => (
                             <Link to={`/description/${item.id}`} className="home__card">
+                                <p className="home__profession">
+                                    {item.profession}
+                                </p>
                                 <p className="home__title">
                                     {item.name}
                                 </p>
-                                <p>
-                                    gsdhsdh
+                                <p className="home__lastName">
+                                    {item.lastName}
+                                </p>
+                                <p className="home__surName">
+                                    {item.surname}
+                                </p>
+                                <p className="home__genre">
+                                    {item.genre}
                                 </p>
                                 <div className="home__group">
                                     <p className="home__company">
-                                        dshdsh
-                                    </p>
-
-                                    <p className="home__city">
-                                        dshsdh
+                                        {item.company}
                                     </p>
                                 </div>
 
                                 <p className="home__exp">
                                     <IoBagRemoveOutline/>
-                                    hsdhsdh
+                                    {item.yearEnd}
                                 </p>
 
                                 <div className="home__btns">
