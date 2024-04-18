@@ -14,7 +14,7 @@ const Register = () => {
         lastName:"",
         tell:"",
         email:"",
-        role:"admin",
+        role:"user",
         cv: [
 
         ],

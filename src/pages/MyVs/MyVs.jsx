@@ -17,7 +17,7 @@ const MyCv = () => {
                 <div className="home__row">
                     {
                         data.filter(item => item.company.toLowerCase() === user.user.company.toLowerCase()).map((item) => (
-                            <Link to={"/onevs"} className="home__card">
+                            <Link to={`/onevs/${item.id}`} className="home__card">
                                 <p className="home__title">
                                     {item.title}
                                 </p>

@@ -15,6 +15,7 @@ import Description from "./pages/Description/Description";
 import AdminPanel from "./pages/adminpanel/AdminPanel";
 import {useSelector} from "react-redux";
 import MyVs from "./pages/MyVs/MyVs";
+import OneVs from "./pages/Onevs/OneVs";
 function App() {
     const role = [
         {
@@ -47,6 +48,7 @@ function App() {
             <Route path={"/response"} element={<Response/>}/>
             <Route path={"/resume/:id"} element={<Resume/>}/>
             <Route path={"/description/:id"} element={<Description/>}/>
+            <Route path={"/onevs/:id"} element={<OneVs/>}/>
             {
                 data?.user?.role === "admin" ?  <Route path={"/adminpanel"} element={<AdminPanel/>}/> : ""
             }
