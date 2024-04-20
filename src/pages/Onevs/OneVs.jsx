@@ -18,40 +18,26 @@ const OneVs = () => {
                 <div className="home__row">
                     {
                         oneV?.users?.map(item => (
-<<<<<<< HEAD
-                            <Link to={`/resume/${item.id}`} className="home__card">
+                            <Link to={`/description/${item.id}`} className="home__card">
                                 <p className="home__title">
                                     {item.name}
                                 </p>
                                 <p>
                                     {item.profession}
-=======
-                            <Link to={`/description/${item.id}`} className="home__card">
-                                <p className="home__profession">
-                                    {item.profession}
-                                </p>
-                                <p className="home__title">
-                                    {item.name}
-                                </p>
-                                <p className="home__lastName">
-                                    {item.lastName}
-                                </p>
-                                <p className="home__surName">
-                                    {item.surname}
-                                </p>
-                                <p className="home__genre">
-                                    {item.genre}
->>>>>>> 9a14cef3b35f7b747ceaa6bc5859e27f7ef75850
                                 </p>
                                 <div className="home__group">
                                     <p className="home__company">
-                                        {item.company}
+                                        dshdsh
+                                    </p>
+
+                                    <p className="home__city">
+                                        dshsdh
                                     </p>
                                 </div>
 
                                 <p className="home__exp">
                                     <IoBagRemoveOutline/>
-                                    {item.yearEnd}
+                                    hsdhsdh
                                 </p>
 
                                 <div className="home__btns">

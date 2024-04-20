@@ -16,7 +16,7 @@ const Home = () => {
        },[])
     const goWork = (e,item) => {
         e.preventDefault()
-        if(!item.users.find(item => item.id == cv[0].id)){
+        if(!item.users.find(item => item.id == cv[0].id) && localStorage.getItem("user")){
             dispatch(patchVacancies({...item,users:[...item.users,cv[0]]}))
         }
     }
