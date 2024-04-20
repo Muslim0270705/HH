@@ -12,6 +12,7 @@ const Resume = () => {
     const {oneCv} = useSelector(store => store.myCv)
     const params = useParams()
     const [chageGenre,setChageGenre] = useState(false)
+    const {data} = useSelector(store => store.auth)
 
     useEffect(() => {
         dispatch(getOneMyCv(params.id))
@@ -22,7 +23,7 @@ const Resume = () => {
                 <div className="resume__naw">
                     <div className="resume__info">
                         <li className={"resume__email"}>
-                            <a  href="#">К списку резюме</a>
+                            <a href="#">К списку резюме</a>
                         </li>
                         <p className="resume__desc">
                             Сейчас на сайте
@@ -32,13 +33,13 @@ const Resume = () => {
                         </h2>
                         {
                             chageGenre ? <form onSubmit={(e) => {
-                                e.preventDefault()
-                                dispatch(updateMyCv({...oneCv,genre:e.target[0].value}))
-                                setChageGenre(false)
-                                setTimeout(() => {
-                                    dispatch(getOneMyCv(params.id))
-                                },1000)
-                            }}>
+                                    e.preventDefault()
+                                    dispatch(updateMyCv({...oneCv, genre: e.target[0].value}))
+                                    setChageGenre(false)
+                                    setTimeout(() => {
+                                        dispatch(getOneMyCv(params.id))
+                                    }, 1000)
+                                }}>
                                     <select>
                                         <option value="man">
                                             man
@@ -52,14 +53,17 @@ const Resume = () => {
                                     </button>
                                 </form> :
                                 <p className="resume__subtitle">
-                                {oneCv.genre}
-                            </p>
+                                    {oneCv.genre}
+                                </p>
                         }
-                        <li className={"resume__redux"}>
-                            <a  href="#" onClick={() => setChageGenre(!chageGenre)}>Редактировать</a>
-                        </li>
+                        {
+                            data?.user?.role === "manager" ? "" : <li className={"resume__redux"}>
+                                <a href="#" onClick={() => setChageGenre(!chageGenre)}>Редактировать</a>
+                            </li>
+                        }
+
                         <p className="resume__subtitles">
-                           Рассматриваю предложения
+                            Рассматриваю предложения
                         </p>
                         <p className="resume__descs">
                             Контакты
@@ -68,17 +72,22 @@ const Resume = () => {
                             +996 {oneCv.tel} — предпочитаемый способ связи
                         </p>
                         <li className={"resume__email"}>
-                            <a  href="#">toktogulovacinara8@gmail.com</a>
+                            <a href="#">toktogulovacinara8@gmail.com</a>
                         </li>
-                        <li className={"resume__redux"}>
-                            <a  href="#">Редактировать</a>
-                        </li>
+                        {
+                            data?.user?.role === "manager" ? "" : <li className={"resume__redux"}>
+                                <a href="#">Редактировать</a>
+                            </li>
+                        }
+
                         <p className="resume__text">
                             Бишкек, не готова к переезду, не готова к командировкам
                         </p>
-                        <li className={"resume__reduxs"}>
-                            <a  href="#">Редактировать</a>
-                        </li>
+                        {
+                            data?.user?.role === "manager" ? "" : <li className={"resume__reduxs"}>
+                                <a href="#">Редактировать</a>
+                            </li>
+                        }
                         <div className="resume__vl">
 
                         </div>

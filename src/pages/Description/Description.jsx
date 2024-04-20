@@ -24,7 +24,7 @@ const Description = () => {
                     </p>
                     <div className="description__info">
                         <p className="description__experience">
-                            Требуемый опыт работы: 1–3 года
+                            {oneV.profession}
                         </p>
                         <p className="description__graph">
                             Полная занятость, полный день

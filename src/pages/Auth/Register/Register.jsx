@@ -20,6 +20,8 @@ const Register = () => {
         ],
         genre:"",
         password:"",
+
+
     })
     const dispatch = useDispatch()
     const navigate = useNavigate()

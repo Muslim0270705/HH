@@ -18,12 +18,12 @@ const OneVs = () => {
                 <div className="home__row">
                     {
                         oneV?.users?.map(item => (
-                            <Link to={`/description/${item.id}`} className="home__card">
+                            <Link to={`/resume/${item.id}`} className="home__card">
                                 <p className="home__title">
                                     {item.name}
                                 </p>
                                 <p>
-                                    gsdhsdh
+                                    {item.profession}
                                 </p>
                                 <div className="home__group">
                                     <p className="home__company">

@@ -1073,6 +1073,24 @@
       "faculty": "PPP",
       "specialization": "DSGD",
       "yearEnd": "2000"
+    },
+    {
+      "id": "c487ceac-ea32-438d-9660-9c8340af8fac",
+      "profession": "Back-end",
+      "name": "itrun",
+      "lastName": "123123",
+      "surname": "123123",
+      "genre": "man",
+      "tel": "123123",
+      "company": "123",
+      "positions": "123",
+      "positionsDesc": "123",
+      "education": "123",
+      "educationalInstitution": "",
+      "faculty": "123",
+      "specialization": "123",
+      "yearEnd": "123123",
+      "views": 2
     }
   ]
 }
